@@ -21,4 +21,9 @@ def predict_new(data: Pet, model):
     return {
         "prediction": predicted_class,
         #"probability": float(y_prob[0])
+        "label": disease_info["label"],
+        "description": disease_info["description"],
+        "treatment": disease_info["treatment"],
+        "severity": disease_info["severity"],
+        "recommendation": disease_info["recommendation"]
     }
